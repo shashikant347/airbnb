@@ -29,7 +29,7 @@ app.use('/api', limiter);
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'https://airbnb-swsn.onrender.com',
+    origin: process.env.CLIENT_URL || 'https://airbnb-1-rq98.onrender.com',
     credentials: true,
   })
 );
@@ -61,5 +61,4 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📡 API: http://localhost:${PORT}/api`);
 });
