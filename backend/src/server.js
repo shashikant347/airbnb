@@ -29,7 +29,7 @@ app.use('/api', limiter);
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL || 'https://airbnb-swsn.onrender.com',
     credentials: true,
   })
 );
