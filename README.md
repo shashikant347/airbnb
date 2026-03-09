@@ -64,33 +64,6 @@ cd ../frontend
 npm install
 ```
 
-### 2. Configure Environment
-
-**Backend** — Copy `.env.example` to `.env` and fill in:
-
-```env
-PORT=5000
-MONGO_URI=mongodb+srv://your-connection-string
-JWT_SECRET=your_jwt_secret_key_here
-JWT_REFRESH_SECRET=your_refresh_secret_key_here
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-CLIENT_URL=http://localhost:5173
-```
-
-**Frontend** — Copy `.env.example` to `.env`:
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
-### 3. Seed Demo Data
-
-```bash
-cd backend
-npm run seed
-```
 
 This creates:
 - 👤 **User**: user@demo.com / password123
@@ -110,9 +83,6 @@ cd frontend
 npm run dev
 ```
 
-Open **http://localhost:5173** 🎉
-
----
 
 ## 📡 API Endpoints
 
@@ -182,7 +152,3 @@ Open **http://localhost:5173** 🎉
 - ✅ Seed script with demo data
 
 ---
-
-## 📝 License
-
-MIT
